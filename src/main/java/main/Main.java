@@ -10,9 +10,9 @@ public class Main {
     public static void main(String[] args) {
 
         PizzaFactory pizzaFactory = new PizzaFactory();
-        Pizza capriciosaPizza = pizzaFactory.createPizza(31.99,Arrays.asList("cheese","champignons","ham"), PizzaType.CAPRICIOSA);
-        Pizza hawaiPizza = pizzaFactory.createPizza(29.99,Arrays.asList("cheese","pineaple","ham"), PizzaType.HAWAI);
-        Pizza margheritaPizza = pizzaFactory.createPizza(24, Arrays.asList("cheese"), PizzaType.MARGERITHA);
+        Pizza capriciosaPizza = pizzaFactory.createPizza( PizzaType.CAPRICIOSA);
+        Pizza hawaiPizza = pizzaFactory.createPizza( PizzaType.HAWAI);
+        Pizza margheritaPizza = pizzaFactory.createPizza(PizzaType.MARGERITHA);
 
         capriciosaPizza.showPizzaInfo();
         hawaiPizza.showPizzaInfo();
